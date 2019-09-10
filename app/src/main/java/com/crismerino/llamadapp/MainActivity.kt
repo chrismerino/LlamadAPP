@@ -94,16 +94,7 @@ class MainActivity : AppCompatActivity() {
             numeroString= ""
             editTextNumberDisplay?.text = numeroString
         }
-
-        // Boton llamar
-
-//        botonLlamar.setOnClickListener {
-//            numeroString = editTextNumberDisplay?.text.toString().trim()
-//
-//            // marcar Intent
-//            val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + Uri.encode(numeroString)))
-//            startActivity(intent)
-//        }
+        
 
         botonLlamar.setOnClickListener {
 
