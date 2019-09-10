@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    Guidelines-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.325" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.675" />
+
+    <!--    End of Guidelines-->
+
+
+    <EditText
+        android:id="@+id/editTextNumberDisplay"
+        style="@style/AppTheme.header"
+        android:clickable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLlamar"
+        style="@style/AppTheme.botonLlamar"
+        android:layout_height="wrap_content"
+        android:text="@string/textButtonLlamar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalBottom" />
+
+    <Button
+        android:id="@+id/buttonUno"
+        style="@style/AppTheme.botonNumeroIzquierdo"
+        android:text="@string/textBotonUno"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalUno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTop" />
+
+    <Button
+        android:id="@+id/buttonDos"
+        style="@style/AppTheme.botonNumeroCentro"
+        android:text="@string/textBotonDos"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalUno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTop" />
+
+    <Button
+        android:id="@+id/buttonTres"
+        style="@style/AppTheme.botonNumeroDerecho"
+        android:text="@string/textBotonTres"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalUno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTop" />
+
+    <Button
+        android:id="@+id/buttonCuatro"
+        style="@style/AppTheme.botonNumeroIzquierdo"
+        android:text="@string/textBotonCuatro"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDos"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalUno" />
+
+    <Button
+        android:id="@+id/buttonCinco"
+        style="@style/AppTheme.botonNumeroCentro"
+        android:text="@string/textBotonCinco"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDos"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalUno" />
+
+    <Button
+        android:id="@+id/buttonSeis"
+        style="@style/AppTheme.botonNumeroDerecho"
+        android:text="@string/textBotonSeis"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalUno" />
+
+    <Button
+        android:id="@+id/buttonSiete"
+        style="@style/AppTheme.botonNumeroIzquierdo"
+        android:text="@string/textBotonSiete"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalTres"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalDos" />
+
+    <Button
+        android:id="@+id/buttonOcho"
+        style="@style/AppTheme.botonNumeroCentro"
+        android:text="@string/textBotonOcho"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalTres"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalDos" />
+
+    <Button
+        android:id="@+id/buttonNueve"
+        style="@style/AppTheme.botonNumeroDerecho"
+        android:text="@string/textBotonNueve"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalTres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalDos" />
+
+    <Button
+        android:id="@+id/buttonCero"
+        style="@style/AppTheme.botonNumeroCentro"
+        android:text="@string/textBotonCero"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalBottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTres" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/AppTheme.botonClear"
+        android:text="@string/textBotonClear"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalRight"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTres" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

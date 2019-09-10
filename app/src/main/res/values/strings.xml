@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LlamadAPP</string>
+    <string name="textButtonLlamar">Llamar</string>
+    <string name="textBotonUno">1</string>
+    <string name="textBotonDos">2</string>
+    <string name="textBotonTres">3</string>
+    <string name="textBotonCuatro">4</string>
+    <string name="textBotonCinco">5</string>
+    <string name="textBotonSeis">6</string>
+    <string name="textBotonSiete">7</string>
+    <string name="textBotonOcho">8</string>
+    <string name="textBotonNueve">9</string>
+    <string name="textBotonCero">0</string>
+    <string name="textBotonClear">C</string>
+
+
+</resources>
